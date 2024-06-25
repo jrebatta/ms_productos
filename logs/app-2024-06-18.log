@@ -1,0 +1,155 @@
+2024-06-18 12:40:15 - Lista de productos total
+2024-06-18 12:42:12 - Lista de productos total
+2024-06-18 12:42:19 - Lista de productos total
+2024-06-18 12:43:35 - Lista de productos total
+2024-06-18 12:43:49 - Lista de productos total
+2024-06-18 12:43:50 - Lista de productos total
+2024-06-18 12:43:51 - Lista de productos total
+2024-06-18 12:44:12 - Lista de productos total
+2024-06-18 12:44:47 - Lista de productos total
+2024-06-18 12:44:48 - Lista de productos total
+2024-06-18 12:58:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 12:58:33 - HikariPool-1 - Shutdown initiated...
+2024-06-18 12:58:33 - HikariPool-1 - Shutdown completed.
+2024-06-18 13:00:10 - Starting AppProductosApplication using Java 21.0.3 with PID 21088 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-18 13:00:10 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 13:00:10 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-18 13:00:10 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-18 13:00:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-18 13:00:11 - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2024-06-18 13:00:11 - Tomcat initialized with port 8080 (http)
+2024-06-18 13:00:11 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 13:00:11 - Starting service [Tomcat]
+2024-06-18 13:00:11 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-18 13:00:11 - Initializing Spring embedded WebApplicationContext
+2024-06-18 13:00:11 - Root WebApplicationContext: initialization completed in 1072 ms
+2024-06-18 13:00:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-18 13:00:11 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-18 13:00:11 - HHH000026: Second-level cache disabled
+2024-06-18 13:00:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-18 13:00:12 - HikariPool-1 - Starting...
+2024-06-18 13:00:12 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@587b425
+2024-06-18 13:00:12 - HikariPool-1 - Start completed.
+2024-06-18 13:00:12 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-18 13:00:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-18 13:00:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 13:00:13 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-18 13:00:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-18 13:00:14 - LiveReload server is running on port 35729
+2024-06-18 13:00:14 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 13:00:14 - Tomcat started on port 8080 (http) with context path ''
+2024-06-18 13:00:14 - Started AppProductosApplication in 3.872 seconds (process running for 7.048)
+2024-06-18 13:00:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 13:00:36 - Initializing Servlet 'dispatcherServlet'
+2024-06-18 13:00:36 - Completed initialization in 1 ms
+2024-06-18 13:00:36 - Lista de productos total
+2024-06-18 13:01:04 - Lista de productos total
+2024-06-18 15:28:27 - Lista de productos total
+2024-06-18 15:28:37 - Lista de productos total
+2024-06-18 15:29:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:29:04 - HikariPool-1 - Shutdown initiated...
+2024-06-18 15:29:04 - HikariPool-1 - Shutdown completed.
+2024-06-18 15:31:23 - Starting AppProductosApplication using Java 21.0.3 with PID 37316 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-18 15:31:23 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 15:31:23 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-18 15:31:23 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-18 15:31:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-18 15:31:23 - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-06-18 15:31:24 - Tomcat initialized with port 8080 (http)
+2024-06-18 15:31:24 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:24 - Starting service [Tomcat]
+2024-06-18 15:31:24 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-18 15:31:24 - Initializing Spring embedded WebApplicationContext
+2024-06-18 15:31:24 - Root WebApplicationContext: initialization completed in 1094 ms
+2024-06-18 15:31:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-18 15:31:24 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-18 15:31:24 - HHH000026: Second-level cache disabled
+2024-06-18 15:31:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-18 15:31:24 - HikariPool-1 - Starting...
+2024-06-18 15:31:24 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72b75cd3
+2024-06-18 15:31:24 - HikariPool-1 - Start completed.
+2024-06-18 15:31:24 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-18 15:31:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-18 15:31:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:31:25 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-18 15:31:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-18 15:31:25 - LiveReload server is running on port 35729
+2024-06-18 15:31:25 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:25 - Tomcat started on port 8080 (http) with context path ''
+2024-06-18 15:31:25 - Started AppProductosApplication in 3.139 seconds (process running for 3.604)
+2024-06-18 15:31:29 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 15:31:29 - Initializing Servlet 'dispatcherServlet'
+2024-06-18 15:31:29 - Completed initialization in 1 ms
+2024-06-18 15:31:44 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-06-18 15:31:55 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-18 15:31:55 - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:31:55 - HikariPool-1 - Shutdown initiated...
+2024-06-18 15:31:55 - HikariPool-1 - Shutdown completed.
+2024-06-18 15:31:55 - Starting AppProductosApplication using Java 21.0.3 with PID 37316 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-18 15:31:55 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 15:31:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-18 15:31:55 - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-06-18 15:31:55 - Tomcat initialized with port 8080 (http)
+2024-06-18 15:31:55 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:55 - Starting service [Tomcat]
+2024-06-18 15:31:55 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-18 15:31:55 - Initializing Spring embedded WebApplicationContext
+2024-06-18 15:31:55 - Root WebApplicationContext: initialization completed in 221 ms
+2024-06-18 15:31:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-18 15:31:55 - HHH000026: Second-level cache disabled
+2024-06-18 15:31:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-18 15:31:55 - HikariPool-2 - Starting...
+2024-06-18 15:31:55 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@504c16f7
+2024-06-18 15:31:55 - HikariPool-2 - Start completed.
+2024-06-18 15:31:55 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-18 15:31:56 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-18 15:31:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:31:56 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-18 15:31:56 - LiveReload server is running on port 35729
+2024-06-18 15:31:56 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:56 - Tomcat started on port 8080 (http) with context path ''
+2024-06-18 15:31:56 - Started AppProductosApplication in 0.495 seconds (process running for 33.903)
+2024-06-18 15:31:56 - Condition evaluation unchanged
+2024-06-18 15:31:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 15:31:57 - Initializing Servlet 'dispatcherServlet'
+2024-06-18 15:31:57 - Completed initialization in 0 ms
+2024-06-18 15:31:57 - Lista de productos total
+2024-06-18 15:31:57 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-18 15:31:57 - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:31:57 - HikariPool-2 - Shutdown initiated...
+2024-06-18 15:31:57 - HikariPool-2 - Shutdown completed.
+2024-06-18 15:31:57 - Starting AppProductosApplication using Java 21.0.3 with PID 37316 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-18 15:31:57 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 15:31:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-18 15:31:57 - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-06-18 15:31:57 - Tomcat initialized with port 8080 (http)
+2024-06-18 15:31:57 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:57 - Starting service [Tomcat]
+2024-06-18 15:31:57 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-18 15:31:57 - Initializing Spring embedded WebApplicationContext
+2024-06-18 15:31:57 - Root WebApplicationContext: initialization completed in 189 ms
+2024-06-18 15:31:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-18 15:31:57 - HHH000026: Second-level cache disabled
+2024-06-18 15:31:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-18 15:31:57 - HikariPool-3 - Starting...
+2024-06-18 15:31:57 - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5d7ea9a7
+2024-06-18 15:31:57 - HikariPool-3 - Start completed.
+2024-06-18 15:31:57 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-18 15:31:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-18 15:31:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:31:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-18 15:31:58 - LiveReload server is running on port 35729
+2024-06-18 15:31:58 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 15:31:58 - Tomcat started on port 8080 (http) with context path ''
+2024-06-18 15:31:58 - Started AppProductosApplication in 0.419 seconds (process running for 35.778)
+2024-06-18 15:31:58 - Condition evaluation unchanged
+2024-06-18 15:32:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 15:32:03 - Initializing Servlet 'dispatcherServlet'
+2024-06-18 15:32:03 - Completed initialization in 0 ms
+2024-06-18 15:32:03 - Lista de productos total
+2024-06-18 15:32:08 - Lista de productos
+2024-06-18 15:32:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-18 15:32:21 - HikariPool-3 - Shutdown initiated...
+2024-06-18 15:32:21 - HikariPool-3 - Shutdown completed.

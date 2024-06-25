@@ -1,0 +1,454 @@
+2024-06-24 19:08:49 - Starting AppProductosApplication using Java 21.0.3 with PID 32228 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 19:08:49 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 19:08:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 19:08:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 19:08:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 19:08:51 - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2024-06-24 19:08:51 - Tomcat initialized with port 8080 (http)
+2024-06-24 19:08:51 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 19:08:51 - Starting service [Tomcat]
+2024-06-24 19:08:51 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 19:08:51 - Initializing Spring embedded WebApplicationContext
+2024-06-24 19:08:51 - Root WebApplicationContext: initialization completed in 1911 ms
+2024-06-24 19:08:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 19:08:52 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 19:08:52 - HHH000026: Second-level cache disabled
+2024-06-24 19:08:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 19:08:52 - HikariPool-1 - Starting...
+2024-06-24 19:08:52 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76602cc0
+2024-06-24 19:08:52 - HikariPool-1 - Start completed.
+2024-06-24 19:08:52 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 19:08:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 19:08:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 19:08:54 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 19:08:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 19:08:55 - LiveReload server is running on port 35729
+2024-06-24 19:08:55 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 19:08:55 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 19:08:55 - Started AppProductosApplication in 6.416 seconds (process running for 12.451)
+2024-06-24 19:11:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 19:11:36 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 19:11:36 - Completed initialization in 4 ms
+2024-06-24 19:11:36 - Lista de productos total
+2024-06-24 19:15:53 - Lista de productos total
+2024-06-24 19:18:39 - Lista de productos total
+2024-06-24 19:18:46 - Lista de productos total
+2024-06-24 19:18:52 - Lista de productos total
+2024-06-24 19:18:55 - Lista de productos total
+2024-06-24 19:19:55 - Lista de productos total
+2024-06-24 19:20:17 - Lista de productos total
+2024-06-24 20:51:11 - Estamos en el try de buscarPorId
+2024-06-24 20:51:14 - Lista de productos total
+2024-06-24 20:51:19 - Estamos en el try de buscarPorId
+2024-06-24 20:51:20 - Lista de productos total
+2024-06-24 20:51:44 - Error al registrar el producto
+java.lang.Exception: Ya existe un producto con ese nombre.
+	at com.upc.appProductos.negocio.ProductoNegocio.registrar(ProductoNegocio.java:27)
+	at com.upc.appProductos.rest.ProductoRest.registrar(ProductoRest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-24 20:51:44 - Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Ya existe un producto con ese nombre."]
+2024-06-24 20:51:49 - Error al registrar el producto
+java.lang.Exception: Ya existe un producto con ese nombre.
+	at com.upc.appProductos.negocio.ProductoNegocio.registrar(ProductoNegocio.java:27)
+	at com.upc.appProductos.rest.ProductoRest.registrar(ProductoRest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-24 20:51:49 - Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Ya existe un producto con ese nombre."]
+2024-06-24 21:05:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:05:56 - HikariPool-1 - Shutdown initiated...
+2024-06-24 21:05:56 - HikariPool-1 - Shutdown completed.
+2024-06-24 21:31:34 - Starting AppProductosApplication using Java 21.0.3 with PID 33276 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:31:34 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:31:34 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 21:31:34 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 21:31:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:31:35 - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-06-24 21:31:35 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:31:35 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:31:35 - Starting service [Tomcat]
+2024-06-24 21:31:35 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:31:35 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:31:35 - Root WebApplicationContext: initialization completed in 856 ms
+2024-06-24 21:31:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:31:35 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:31:35 - HHH000026: Second-level cache disabled
+2024-06-24 21:31:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:31:35 - HikariPool-1 - Starting...
+2024-06-24 21:31:35 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a49de29
+2024-06-24 21:31:35 - HikariPool-1 - Start completed.
+2024-06-24 21:31:35 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:31:36 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:31:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:31:36 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 21:31:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:31:37 - LiveReload server is running on port 35729
+2024-06-24 21:31:37 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:31:37 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:31:37 - Started AppProductosApplication in 3.162 seconds (process running for 4.007)
+2024-06-24 21:32:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 21:32:31 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 21:32:31 - Completed initialization in 1 ms
+2024-06-24 21:37:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:37:13 - HikariPool-1 - Shutdown initiated...
+2024-06-24 21:37:13 - HikariPool-1 - Shutdown completed.
+2024-06-24 21:39:44 - Starting AppProductosApplication using Java 21.0.3 with PID 33452 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:39:44 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:39:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 21:39:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 21:39:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:39:45 - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-06-24 21:39:45 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:39:45 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:39:45 - Starting service [Tomcat]
+2024-06-24 21:39:45 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:39:45 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:39:45 - Root WebApplicationContext: initialization completed in 816 ms
+2024-06-24 21:39:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:39:45 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:39:45 - HHH000026: Second-level cache disabled
+2024-06-24 21:39:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:39:45 - HikariPool-1 - Starting...
+2024-06-24 21:39:46 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bdcf1ff
+2024-06-24 21:39:46 - HikariPool-1 - Start completed.
+2024-06-24 21:39:46 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:39:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:39:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:39:46 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 21:39:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:39:47 - LiveReload server is running on port 35729
+2024-06-24 21:39:47 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:39:47 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:39:47 - Started AppProductosApplication in 3.085 seconds (process running for 3.513)
+2024-06-24 21:39:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 21:39:50 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 21:39:50 - Completed initialization in 1 ms
+2024-06-24 21:39:50 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:40:02 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:40:59 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:41:02 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:42:24 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:42:26 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-24 21:42:26 - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:42:26 - HikariPool-1 - Shutdown initiated...
+2024-06-24 21:42:26 - HikariPool-1 - Shutdown completed.
+2024-06-24 21:42:26 - Starting AppProductosApplication using Java 21.0.3 with PID 33452 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:42:26 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:42:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:42:26 - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-06-24 21:42:26 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:42:26 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:26 - Starting service [Tomcat]
+2024-06-24 21:42:26 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:42:26 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:42:26 - Root WebApplicationContext: initialization completed in 186 ms
+2024-06-24 21:42:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:42:26 - HHH000026: Second-level cache disabled
+2024-06-24 21:42:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:42:26 - HikariPool-2 - Starting...
+2024-06-24 21:42:26 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@69019ac7
+2024-06-24 21:42:26 - HikariPool-2 - Start completed.
+2024-06-24 21:42:26 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:42:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:42:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:42:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:42:26 - LiveReload server is running on port 35729
+2024-06-24 21:42:26 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:26 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:42:26 - Started AppProductosApplication in 0.445 seconds (process running for 162.597)
+2024-06-24 21:42:26 - Condition evaluation unchanged
+2024-06-24 21:42:28 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-24 21:42:28 - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:42:28 - HikariPool-2 - Shutdown initiated...
+2024-06-24 21:42:28 - HikariPool-2 - Shutdown completed.
+2024-06-24 21:42:28 - Starting AppProductosApplication using Java 21.0.3 with PID 33452 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:42:28 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:42:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:42:28 - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-06-24 21:42:28 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:42:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:28 - Starting service [Tomcat]
+2024-06-24 21:42:28 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:42:28 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:42:28 - Root WebApplicationContext: initialization completed in 168 ms
+2024-06-24 21:42:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:42:28 - HHH000026: Second-level cache disabled
+2024-06-24 21:42:28 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:42:28 - HikariPool-3 - Starting...
+2024-06-24 21:42:28 - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7bc2667a
+2024-06-24 21:42:28 - HikariPool-3 - Start completed.
+2024-06-24 21:42:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:42:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:42:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:42:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:42:28 - LiveReload server is running on port 35729
+2024-06-24 21:42:28 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:42:28 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:42:28 - Started AppProductosApplication in 0.403 seconds (process running for 164.475)
+2024-06-24 21:42:28 - Condition evaluation unchanged
+2024-06-24 21:43:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 21:43:08 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 21:43:08 - Completed initialization in 1 ms
+2024-06-24 21:43:08 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:43:15 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:43:24 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:44:30 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:44:39 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:45:05 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:45:09 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:45:19 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:45:20 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:46:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:46:04 - HikariPool-3 - Shutdown initiated...
+2024-06-24 21:46:04 - HikariPool-3 - Shutdown completed.
+2024-06-24 21:46:07 - Starting AppProductosApplication using Java 21.0.3 with PID 16132 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:46:07 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:46:07 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 21:46:07 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 21:46:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:46:08 - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-06-24 21:46:08 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:46:08 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:46:08 - Starting service [Tomcat]
+2024-06-24 21:46:08 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:46:08 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:46:08 - Root WebApplicationContext: initialization completed in 838 ms
+2024-06-24 21:46:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:46:08 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:46:08 - HHH000026: Second-level cache disabled
+2024-06-24 21:46:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:46:08 - HikariPool-1 - Starting...
+2024-06-24 21:46:08 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@745fa8bf
+2024-06-24 21:46:08 - HikariPool-1 - Start completed.
+2024-06-24 21:46:08 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:46:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:46:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:46:09 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 21:46:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:46:10 - LiveReload server is running on port 35729
+2024-06-24 21:46:10 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:46:10 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:46:10 - Started AppProductosApplication in 2.907 seconds (process running for 3.335)
+2024-06-24 21:46:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 21:46:20 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 21:46:20 - Completed initialization in 1 ms
+2024-06-24 21:46:20 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:46:27 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:46:27 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:46:42 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "precio-en-rango"]
+2024-06-24 21:47:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:47:52 - HikariPool-1 - Shutdown initiated...
+2024-06-24 21:47:52 - HikariPool-1 - Shutdown completed.
+2024-06-24 21:47:55 - Starting AppProductosApplication using Java 21.0.3 with PID 11916 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:47:55 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:47:55 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 21:47:55 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 21:47:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:47:56 - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2024-06-24 21:47:56 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:47:56 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:47:56 - Starting service [Tomcat]
+2024-06-24 21:47:56 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:47:56 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:47:56 - Root WebApplicationContext: initialization completed in 984 ms
+2024-06-24 21:47:56 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:47:56 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:47:56 - HHH000026: Second-level cache disabled
+2024-06-24 21:47:56 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:47:56 - HikariPool-1 - Starting...
+2024-06-24 21:47:57 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ef89658
+2024-06-24 21:47:57 - HikariPool-1 - Start completed.
+2024-06-24 21:47:57 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:47:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:47:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:47:57 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 21:47:58 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:47:58 - LiveReload server is running on port 35729
+2024-06-24 21:47:58 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:47:58 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:47:58 - Started AppProductosApplication in 3.327 seconds (process running for 4.192)
+2024-06-24 21:48:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:48:29 - HikariPool-1 - Shutdown initiated...
+2024-06-24 21:48:29 - HikariPool-1 - Shutdown completed.
+2024-06-24 21:49:04 - Starting AppProductosApplication using Java 21.0.3 with PID 10104 (E:\Juan\Back\appProductos\target\classes started by juan2 in E:\Juan\Back\appProductos)
+2024-06-24 21:49:04 - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 21:49:04 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-24 21:49:04 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-24 21:49:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24 21:49:05 - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-06-24 21:49:05 - Tomcat initialized with port 8080 (http)
+2024-06-24 21:49:05 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:49:05 - Starting service [Tomcat]
+2024-06-24 21:49:05 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-24 21:49:05 - Initializing Spring embedded WebApplicationContext
+2024-06-24 21:49:05 - Root WebApplicationContext: initialization completed in 799 ms
+2024-06-24 21:49:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24 21:49:05 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-24 21:49:05 - HHH000026: Second-level cache disabled
+2024-06-24 21:49:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24 21:49:05 - HikariPool-1 - Starting...
+2024-06-24 21:49:05 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ccdcac8
+2024-06-24 21:49:05 - HikariPool-1 - Start completed.
+2024-06-24 21:49:05 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-24 21:49:06 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24 21:49:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 21:49:06 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24 21:49:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24 21:49:07 - LiveReload server is running on port 35729
+2024-06-24 21:49:07 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-24 21:49:07 - Tomcat started on port 8080 (http) with context path ''
+2024-06-24 21:49:07 - Started AppProductosApplication in 2.92 seconds (process running for 3.342)
+2024-06-24 21:49:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 21:49:10 - Initializing Servlet 'dispatcherServlet'
+2024-06-24 21:49:10 - Completed initialization in 1 ms
+2024-06-24 21:53:15 - Error al registrar el producto
+java.lang.Exception: Ya existe un producto con ese nombre.
+	at com.upc.appProductos.negocio.ProductoNegocio.registrar(ProductoNegocio.java:27)
+	at com.upc.appProductos.rest.ProductoRest.registrar(ProductoRest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-24 21:53:15 - Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Ya existe un producto con ese nombre."]
+2024-06-24 21:56:07 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'double'; empty String]
+2024-06-24 22:05:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24 22:05:53 - HikariPool-1 - Shutdown initiated...
+2024-06-24 22:05:53 - HikariPool-1 - Shutdown completed.
