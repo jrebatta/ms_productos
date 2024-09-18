@@ -6,18 +6,18 @@ import java.util.List;
 
 public interface IProductoNegocio {
     Producto registrar(Producto producto) throws Exception;
-    public Producto buscar(Long codigo) throws Exception;
-    public List<Producto> listado();
-    public Producto actualizar(Producto producto) throws Exception;
-    public void eliminar(Long codigo) throws Exception;
+    Producto buscar(Long codigo) throws Exception;
+    List<Producto> listado();
+    Producto actualizar(Producto producto) throws Exception;
+    void eliminar(Long codigo) throws Exception;
 
-    public double calcularIGV(Producto producto);
-    public double calcularDescuento(Producto producto);
-    public double calcularPrecioVenta(Producto producto);
-    public double calcularPrecioVenta(Long codigo) throws Exception;
+    double calcularIGV(Producto producto);
+    double calcularDescuento(Producto producto);
+    double calcularPrecioVenta(Producto producto);
+    double calcularPrecioVenta(Long codigo) throws Exception;
 
-    public List<Producto> listadoProductosPorDescripcion(String prefijo);
-    public List<Producto> listadoTotal();
+    List<Producto> listadoProductosPorDescripcion(String prefijo);
+    List<Producto> listadoTotal();
     List<Producto> buscarPorPrecioMenorA(double precio);
     List<Producto> buscarPorPrecioEnRango(double precioMin, double precioMax);
 }

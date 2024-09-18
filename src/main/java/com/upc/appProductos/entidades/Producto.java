@@ -16,6 +16,7 @@ public class Producto {
     private transient double venta;//precio de venta, como no persistente (no se va a crear en la BD)
 
 
+
     public Producto(Long codigo, String descripcion, double precio, int stock) {
         this.codigo = codigo;
         this.descripcion = descripcion;

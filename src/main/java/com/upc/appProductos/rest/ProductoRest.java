@@ -38,7 +38,7 @@ public class ProductoRest {
         return productoNegocio.listadoProductosPorDescripcion(descripcion);
     }
 
-    @PostMapping("/producto")
+    @PostMapping("/registrarProducto")
     public Producto registrar(@RequestBody Producto producto){
         try {
             return productoNegocio.registrar(producto);
@@ -72,7 +72,7 @@ public class ProductoRest {
         }
     }
 
-    @PutMapping("/producto/{id}")
+    @PutMapping("/actualizarProducto/{id}")
     public Producto actualizar(@PathVariable Long id, @RequestBody Producto productoActualizado) {
         try {
             Producto productoExistente = productoNegocio.buscar(id);
