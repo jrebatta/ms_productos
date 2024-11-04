@@ -9,18 +9,13 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.Optional;
+import java.util.Base64;
 
 @Service
 public class ProductoNegocio implements IProductoNegocio{
 
     @Autowired
     IProductoRepositorio iProductoRepositorio;
-
-    public static String convertirTexto(String texto) {
-        // Convertir a minúsculas y eliminar espacios
-        return texto.toLowerCase().replaceAll("\\s+", "");
-    }
-
 
     @Override
     public Producto buscar(Long codigo) throws Exception {
@@ -36,32 +31,44 @@ public class ProductoNegocio implements IProductoNegocio{
 
     @Override
     public Producto actualizar(Producto producto) throws Exception {
-        // Verificar si el producto a actualizar ya existe en la base de datos
+        // Verificar si el producto existe
         Optional<Producto> productoExistente = iProductoRepositorio.findById(producto.getCodigo());
-
         if (productoExistente.isEmpty()) {
             throw new Exception("El producto que intenta actualizar no existe.");
         }
 
-        // Verificar si ya existe un producto con la misma descripción, excluyendo el actual
+        // Verificar si existe otro producto con la misma descripción
         Optional<Producto> productoConDescripcionExistente = iProductoRepositorio.findByDescripcionIgnoreCase(producto.getDescripcion());
         if (productoConDescripcionExistente.isPresent() && !productoConDescripcionExistente.get().getCodigo().equals(producto.getCodigo())) {
             throw new Exception("Ya existe un producto con ese nombre.");
+        }
+
+        // Convertir la imagen a Base64 si no está vacía
+        if (producto.getImagen() != null && !producto.getImagen().isEmpty()) {
+            producto.setImagen(encodeImagen(producto.getImagen())); // Usa el método encodeImagen
         }
 
         return iProductoRepositorio.save(producto);
     }
 
 
+
     @Override
     public Producto registrar(Producto producto) throws Exception {
-        // Verificar si ya existe un producto con la misma descripción, ignorando mayúsculas y minúsculas
+        // Verificar si ya existe un producto con la misma descripción
         Optional<Producto> productoExistente = iProductoRepositorio.findByDescripcionIgnoreCase(producto.getDescripcion());
         if (productoExistente.isPresent()) {
             throw new Exception("Ya existe un producto con ese nombre.");
         }
-        return iProductoRepositorio.save(producto); // Insertar en la base de datos
+
+        // Convertir la imagen a Base64 si no está vacía
+        if (producto.getImagen() != null && !producto.getImagen().isEmpty()) {
+            producto.setImagen(encodeImagen(producto.getImagen())); // Usa el método encodeImagen
+        }
+
+        return iProductoRepositorio.save(producto); // Guardar en la base de datos
     }
+
 
 
     @Override
@@ -109,13 +116,17 @@ public class ProductoNegocio implements IProductoNegocio{
 
     @Override
     public List<Producto> listadoTotal() {
-        List<Producto> listado;
-        listado = iProductoRepositorio.findAll();
-        for(Producto producto:listado){
+        List<Producto> listado = iProductoRepositorio.findAll();
+        for (Producto producto : listado) {
             producto.setVenta(calcularPrecioVenta(producto));
+            // Decodificar la imagen en Base64 antes de enviarla al frontend
+            if (producto.getImagen() != null) {
+                producto.setImagen(decodeImagen(producto.getImagen())); // Decodificar la imagen
+            }
         }
         return listado;
     }
+
 
     @Override
     public List<Producto> buscarPorPrecioMenorA(double precio) {
@@ -125,5 +136,15 @@ public class ProductoNegocio implements IProductoNegocio{
     @Override
     public List<Producto> buscarPorPrecioEnRango(double precioMin, double precioMax) {
         return iProductoRepositorio.findByPrecioBetween(precioMin, precioMax);
+    }
+
+    public static String encodeImagen(String imagen) {
+        // Codificar la imagen a Base64
+        return Base64.getEncoder().encodeToString(imagen.getBytes());
+    }
+
+    public static String decodeImagen(String imagenBase64) {
+        // Decodificar desde Base64 a texto
+        return new String(Base64.getDecoder().decode(imagenBase64));
     }
 }

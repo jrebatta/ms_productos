@@ -13,14 +13,18 @@ public class Producto {
     private String descripcion;
     private double precio;
     private int stock;
+    @Lob
+    @Column(columnDefinition = "TEXT")
+    private String imagen;
     private transient double venta;//precio de venta, como no persistente (no se va a crear en la BD)
 
 
 
-    public Producto(Long codigo, String descripcion, double precio, int stock) {
+    public Producto(Long codigo, String descripcion, double precio, String imagen, int stock) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
+        this.imagen = imagen;
         this.stock = stock;
     }
 
